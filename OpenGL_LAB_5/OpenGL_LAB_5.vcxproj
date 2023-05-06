@@ -191,10 +191,12 @@
     <ClCompile Include="math_3d.cpp" />
     <ClCompile Include="mesh.cpp" />
     <ClCompile Include="OpenGL_LAB_5.cpp" />
+    <ClCompile Include="particle_system.cpp" />
     <ClCompile Include="pipeline.cpp" />
+    <ClCompile Include="ps_update_technique.cpp" />
+    <ClCompile Include="random_texture.cpp" />
     <ClCompile Include="shadow_map_fbo.cpp" />
     <ClCompile Include="shadow_map_technique.cpp" />
-    <ClCompile Include="skybox.cpp" />
     <ClCompile Include="skybox_technique.cpp" />
     <ClCompile Include="technique.cpp" />
     <ClCompile Include="texture.cpp" />
@@ -210,17 +212,25 @@
     <ClInclude Include="lighting_technique.h" />
     <ClInclude Include="math_3d.h" />
     <ClInclude Include="mesh.h" />
+    <ClInclude Include="ogldev_types.h" />
+    <ClInclude Include="ogldev_util.h" />
+    <ClInclude Include="particle_system.h" />
     <ClInclude Include="pipeline.h" />
+    <ClInclude Include="ps_update_technique.h" />
+    <ClInclude Include="random_texture.h" />
     <ClInclude Include="shadow_map_fbo.h" />
     <ClInclude Include="shadow_map_technique.h" />
-    <ClInclude Include="skybox.h" />
     <ClInclude Include="skybox_technique.h" />
     <ClInclude Include="technique.h" />
     <ClInclude Include="texture.h" />
+    <ClInclude Include="unistd.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\fireworks_red.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

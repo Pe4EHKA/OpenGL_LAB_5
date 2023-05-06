@@ -1,3 +1,20 @@
+/*
+	Copyright 2010 Etay Meiri
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 #ifndef PIPELINE_H
 #define	PIPELINE_H
 
@@ -8,8 +25,8 @@ class Pipeline
 public:
     Pipeline()
     {
-        m_scale = Vector3f(1.0f, 1.0f, 1.0f);
-        m_worldPos = Vector3f(0.0f, 0.0f, 0.0f);
+        m_scale      = Vector3f(1.0f, 1.0f, 1.0f);
+        m_worldPos   = Vector3f(0.0f, 0.0f, 0.0f);
         m_rotateInfo = Vector3f(0.0f, 0.0f, 0.0f);
     }
 
@@ -25,6 +42,11 @@ public:
         m_worldPos.x = x;
         m_worldPos.y = y;
         m_worldPos.z = z;
+    }
+    
+    void WorldPos(const Vector3f& Pos)
+    {
+        m_worldPos = Pos;
     }
 
     void Rotate(float RotateX, float RotateY, float RotateZ)
@@ -70,3 +92,4 @@ private:
 
 
 #endif	/* PIPELINE_H */
+
